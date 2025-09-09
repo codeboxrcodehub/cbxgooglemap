@@ -1,0 +1,23 @@
+{
+  "name": "cbx/googlemap",
+  "description": "cbx googlemap plugin",
+  "type": "library",
+  "license": "MIT",
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "require": {
+    "enshrined/svg-sanitize": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cbx\\Googlemap\\": "includes/"
+    },
+    "files": [
+      "includes/Functions/cbxgooglemap-functions.php",
+      "includes/Functions/cbxgooglemap-tpl-loader.php"
+    ]
+  },
+  "replace": {
+  }
+}
