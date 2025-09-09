@@ -23,7 +23,8 @@ jobs:
       - name: Find Readme File
         id: find_readme
         run: |
-          readme_file=$(find . -type f -iname "readme.*" | head -n 1)
+          #readme_file=$(find . -type f -iname "readme.*" | head -n 1)
+          readme_file=$(find . -maxdepth 1 -type f -iname "readme.txt" | head -n 1)
           if [ -n "$readme_file" ]; then
             echo "Readme file found: $readme_file"
             echo "readme_file=$readme_file" >> $GITHUB_ENV
