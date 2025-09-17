@@ -80,8 +80,10 @@ jobs:
           echo "Extracted release notes for version $version:"
           printf "%b" "$release_notes"
 
-          # Set output
-          echo "::set-output name=notes::$(printf "%b" "$release_notes")"
+          # Set output (fixed, now using Environment File)
+          echo "notes<<EOF" >> $GITHUB_OUTPUT
+          printf "%b\n" "$release_notes" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Debug Release Notes
         run: |
