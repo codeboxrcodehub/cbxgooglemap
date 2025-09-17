@@ -487,7 +487,7 @@ final class CBXGoogleMapAdmin
                 if (isset($_POST[$meta_prefix.$id])) {
 
                     if (isset($_POST[$meta_prefix.$id])) {
-                        $updated_value = sanitize_text_field(wp_unslash($_POST[$meta_prefix.$id]));
+                        $updated_value = wp_unslash($_POST[$meta_prefix.$id]);
 
 
                         if ($field_type == 'text') {
@@ -497,6 +497,9 @@ final class CBXGoogleMapAdmin
                         } else {
                             if ($sanitize_callback !== null && is_callable($sanitize_callback)) {
                                 $updated_value = call_user_func($sanitize_callback, $updated_value);
+                            }
+                            else{
+                                $updated_value = sanitize_text_field(wp_unslash($updated_value));
                             }
                         }
 
@@ -1134,7 +1137,7 @@ final class CBXGoogleMapAdmin
         //$general_settings = get_option( 'cbxgooglemap_general', [] );
 
         $api_key    = $settings->get_field('apikey', 'cbxgooglemap_general', '');
-        $map_source = intval($settings->get_field('mapsource', 'cbxgooglemap_general', 1));
+        $map_source = (int) $settings->get_field( 'mapsource', 'cbxgooglemap_general', 1 );
 
         if ($map_source == 1 && $api_key == '') {
             echo '<p style="text-align: center;">'.esc_html__('Google Map Api Key is invalid!', 'cbxgooglemap').'</p>';
@@ -1160,7 +1163,7 @@ final class CBXGoogleMapAdmin
                 }
 
                 if (isset($attributes['height'])) {
-                    $attr['height'] = intval($attributes['height']);
+                    $attr['height'] = (int) $attributes['height'];
                 }
 
                 if (isset($attributes['zoom'])) {

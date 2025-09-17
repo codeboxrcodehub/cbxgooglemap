@@ -16,7 +16,7 @@
  * Plugin Name:       CBX Map for Google Map & OpenStreetMap
  * Plugin URI:        https://codeboxr.com/product/cbx-google-map-for-wordpress/
  * Description:       Easy responsive embed of google map and openstreet map
- * Version:           2.0.0
+ * Version:           2.0.1
  * Author:            Codeboxr
  * Author URI:        https://codeboxr.com
  * License:           GPL-2.0+
@@ -33,7 +33,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 defined( 'CBXGOOGLEMAP_PLUGIN_NAME' ) or define( 'CBXGOOGLEMAP_PLUGIN_NAME', 'cbxgooglemap' );
-defined( 'CBXGOOGLEMAP_PLUGIN_VERSION' ) or define( 'CBXGOOGLEMAP_PLUGIN_VERSION', '2.0.0' );
+defined( 'CBXGOOGLEMAP_PLUGIN_VERSION' ) or define( 'CBXGOOGLEMAP_PLUGIN_VERSION', '2.0.1' );
 defined( 'CBXGOOGLEMAP_BASE_NAME' ) or define( 'CBXGOOGLEMAP_BASE_NAME', plugin_basename( __FILE__ ) );
 defined( 'CBXGOOGLEMAP_ROOT_PATH' ) or define( 'CBXGOOGLEMAP_ROOT_PATH', plugin_dir_path( __FILE__ ) );
 defined( 'CBXGOOGLEMAP_ROOT_URL' ) or define( 'CBXGOOGLEMAP_ROOT_URL', plugin_dir_url( __FILE__ ) );
