@@ -489,17 +489,16 @@ final class CBXGoogleMapAdmin
                     if (isset($_POST[$meta_prefix.$id])) {
                         $updated_value = wp_unslash($_POST[$meta_prefix.$id]);
 
-
                         if ($field_type == 'text') {
-                            $updated_value = sanitize_text_field(wp_unslash($updated_value));
+                            $updated_value = sanitize_text_field($updated_value);
                         } elseif ($field_type == 'textarea') {
-                            $updated_value = sanitize_textarea_field(wp_unslash($updated_value));
+                            $updated_value = sanitize_textarea_field($updated_value);
                         } else {
                             if ($sanitize_callback !== null && is_callable($sanitize_callback)) {
                                 $updated_value = call_user_func($sanitize_callback, $updated_value);
                             }
                             else{
-                                $updated_value = sanitize_text_field(wp_unslash($updated_value));
+                                $updated_value = sanitize_text_field($updated_value);
                             }
                         }
 

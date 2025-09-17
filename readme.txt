@@ -107,6 +107,9 @@ Not at this moment
 6. CBX Map frontend
 
 == Changelog ==
+= 2.0.1 =
+* [improvement] Minor sanitization improvement
+
 = 2.0.0 =
 * [new] Backend UI refreshed with latest design
 * [new] Fully revamped
