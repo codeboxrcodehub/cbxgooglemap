@@ -5,6 +5,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 use enshrined\svgSanitize\Sanitizer;
+use FreepikLabs\DomPurify\Purifier;
 
 if ( ! function_exists( 'cbxgooglemap_esc_svg' ) ) {
 	/**
@@ -197,4 +198,12 @@ if ( ! function_exists( 'cbxgooglemap_check_and_deactivate_plugin' ) ) {
 
 		//return false;
 	}//end method cbxgooglemap_check_and_deactivate_plugin
+}
+
+if(!function_exists('cbxgooglemap_decode_entities_array')){
+	function cbxgooglemap_decode_entities_array($arr = []){
+		return array_map(function ($v) {
+			return is_string($v) ? html_entity_decode($v, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') : $v;
+		}, $arr);
+	}
 }

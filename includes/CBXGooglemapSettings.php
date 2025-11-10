@@ -1234,7 +1234,7 @@ final class CBXGooglemapSettings
                             do_settings_sections($form['id']);
 
                             do_action('cbxgooglemap_setting_form_bottom_'.$form['id'], $form);
-                            do_action('cbxchangelog_setting_form_end', $form);
+                            do_action('cbxgooglemap_setting_form_end', $form);
                             ?>
                             <div class="global_setting_submit_buttons_wrap">
                                 <?php do_action('cbxgooglemap_setting_submit_buttons_start', $form['id']); ?>

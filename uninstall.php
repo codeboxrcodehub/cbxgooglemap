@@ -35,12 +35,12 @@ require_once plugin_dir_path( __FILE__ ) . "vendor/autoload.php";
 /**
  * The code that runs during plugin uninstall.
  */
-function uninstall_cbxgooglemap() {
+function cbxgooglemap_uninstall() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/CBXGoogleMapUninstall.php';
 
 	CBXGoogleMapUninstall::uninstall();
-}//end function uninstall_cbxgooglemap
+}//end function cbxgooglemap_uninstall
 
 if ( ! defined( 'CBXGOOGLEMAP_PLUGIN_NAME' ) ) {
-	uninstall_cbxgooglemap();
+	cbxgooglemap_uninstall();
 }

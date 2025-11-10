@@ -142,7 +142,7 @@ class CBXGooglemapHelper {
 
 			//only cache $post the first time through the loop
 			if ( ! isset( $GLOBALS['post_cache'] ) ) {
-				$GLOBALS['post_cache'] = $post;
+				$GLOBALS['post_cache'] = $post; //phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 			}
 
 			//setup the post data as usual
@@ -519,6 +519,7 @@ class CBXGooglemapHelper {
 			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 		}
 
+		//phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 		if ( defined( 'CBXGOOGLEMAPPRO_PLUGIN_NAME' ) || in_array( 'cbxgooglemappro/cbxgooglemappro.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 			//plugin is activated
 

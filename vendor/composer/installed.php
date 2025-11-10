@@ -3,7 +3,7 @@
         'name' => 'cbx/googlemap',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '129fa237669e238c599a6025d775c502dc5c147a',
+        'reference' => '3bd5bdea7d94681a07a1be78c7fd7ebf6d28e873',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'cbx/googlemap' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '129fa237669e238c599a6025d775c502dc5c147a',
+            'reference' => '3bd5bdea7d94681a07a1be78c7fd7ebf6d28e873',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -7,10 +7,10 @@ if ( ! defined( 'WPINC' ) ) {
 ?>
 
 <?php
-$save_svg   = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_save' ) );
-$more_v_svg = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_more_v' ) );
-$import_svg = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_import' ) );
-$export_svg = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_export' ) );
+$cbxgooglemap_save_svg_icon   = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_save' ) );
+$cbxgooglemap_more_v_svg_icon = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_more_v' ) );
+$cbxgooglemap_import_svg_icon = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_import' ) );
+$cbxgooglemap_export_svg_icon = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_export' ) );
 
 ?>
 <div class="wrap cbx-chota cbxchota-setting-common cbxgooglemap-page-wrapper cbxgooglemap-setting-wrapper"
@@ -36,7 +36,7 @@ $export_svg = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_export' ) );
                            class="button outline primary"><?php esc_html_e( 'Support & Docs', 'cbxgooglemap' ); ?></a>
                         <a href="#" id="save_settings"
                            class="button primary icon icon-inline icon-right mr-5">
-                            <i class="cbx-icon"><?php echo $save_svg; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped?></i>
+                            <i class="cbx-icon"><?php echo $cbxgooglemap_save_svg_icon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped?></i>
                             <span class="button-label"><?php esc_html_e( 'Save Settings', 'cbxgooglemap' ); ?></span>
                         </a>
 						<?php do_action( 'cbxgooglemap_wpheading_wrap_right_after', 'settings' ); ?>
@@ -51,11 +51,11 @@ $export_svg = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_export' ) );
             <div class="col-12">
 				<?php do_action( 'cbxgooglemap_settings_form_before', 'settings' );
 
-                $security = wp_create_nonce( 'cbxgooglemap_settings_nonce' );
+                $cbxgooglemap_nonce = wp_create_nonce( 'cbxgooglemap_settings_nonce' );
 
-                $settings_export_url = add_query_arg( [
+                $cbxgooglemap_settings_export_url = add_query_arg( [
                 'cbxgooglemap_settings_export' => 1,
-                'security'                     => $security,
+                'security'                     => $cbxgooglemap_nonce,
                 ], site_url() );
                 ?>
 
@@ -63,13 +63,13 @@ $export_svg = cbxgooglemap_esc_svg( cbxgooglemap_load_svg( 'icon_export' ) );
                     <div class="inside cbx-export-import-inner">
                         <h2><?php esc_html_e( 'Export/Import', 'cbxgooglemap' ); ?></h2>
                         <div class="cbx-export-import-button-wrap">
-                            <a href="<?php echo esc_url( $settings_export_url ); ?>" class="button secondary icon icon-right icon-inline"
+                            <a href="<?php echo esc_url( $cbxgooglemap_settings_export_url ); ?>" class="button secondary icon icon-right icon-inline"
                                id="cbx-export">
-                                <i class="cbx-icon"><?php echo $export_svg;//phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></i>
+                                <i class="cbx-icon"><?php echo $cbxgooglemap_export_svg_icon;//phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></i>
                                 <span class="button-label"><?php esc_html_e( 'Export', 'cbxgooglemap' ) ?></span>
                             </a>
                             <a class="button primary  icon icon-right icon-inline" id="cbxgooglemap_settings_import">
-                                <i class="cbx-icon"><?php echo $import_svg;//phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></i>
+                                <i class="cbx-icon"><?php echo $cbxgooglemap_import_svg_icon;//phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></i>
                                 <span class="button-label"><?php esc_html_e( 'Import', 'cbxgooglemap' ) ?></span>
                             </a>
                         </div>

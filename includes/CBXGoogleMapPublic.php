@@ -255,6 +255,7 @@ class CBXGoogleMapPublic {
 			'data-post-id' => $id
 		];
 
+
 		$output_html  = '';
 
 		if ( $id > 0 ) {
@@ -296,6 +297,8 @@ class CBXGoogleMapPublic {
 
 		}
         else {
+			$atts = cbxgooglemap_decode_entities_array($atts);
+
 			//show map from shortcode params only
 			$lat = isset( $atts['lat'] ) ? floatval( $atts['lat'] ) : '';
 			$lng = isset( $atts['lat'] ) ? floatval( $atts['lng'] ) : '';
@@ -321,8 +324,6 @@ class CBXGoogleMapPublic {
 			$showinfo    = isset( $atts['showinfo'] ) ? absint( $atts['showinfo'] ) : $showinfo_default;
 			$infow_open  = isset( $atts['infow_open'] ) ? absint( $atts['infow_open'] ) : $infow_open_default;
 			$scrollwheel = isset( $atts['scrollwheel'] ) ? absint( $atts['scrollwheel'] ) : $scrollwheel_default;
-
-
 		}
 
 		if ( $heading == '' && $website == '' ) {
@@ -342,7 +343,7 @@ class CBXGoogleMapPublic {
 
 		$data_custom_attrs_html = ' ';
 		foreach ( $data_custom_attrs as $custom_attr_key => $custom_attr_value ) {
-			$data_custom_attrs_html .= ' ' . $custom_attr_key . '="' . esc_attr( $custom_attr_value ) . '" ';
+			$data_custom_attrs_html .= ' ' . $custom_attr_key . '="' . esc_attr( html_entity_decode($custom_attr_value) ) . '" ';
 		}
 
 		$output_html .= '<div class="cbxgooglemap_wrapper ' . esc_attr( $extra_class ) . '">';

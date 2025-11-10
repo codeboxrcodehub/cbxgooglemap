@@ -101,7 +101,7 @@ final class CBXGoogleMap {
 	 * Ensures only one instance of cbxgooglemap is loaded or can be loaded.
 	 *
 	 * @return self Main instance.
-	 * @see run_cbxgooglemap()
+	 * @see cbxgooglemap_run()
 	 * @since  1.1.12
 	 * @static
 	 */
@@ -115,10 +115,6 @@ final class CBXGoogleMap {
 
 	private function define_common_hooks() {
 		$misc = new CBXGoogleMapMisc();
-
-		//add_action( 'plugins_loaded', [ $misc, 'load_plugin_textdomain' ] );
-
-
 
 		//upgrade process
 		//add_action('admin_init', [$misc, 'admin_init_upgrader_process']);

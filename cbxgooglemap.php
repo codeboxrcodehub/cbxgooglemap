@@ -16,7 +16,7 @@
  * Plugin Name:       CBX Map for Google Map & OpenStreetMap
  * Plugin URI:        https://codeboxr.com/product/cbx-google-map-for-wordpress/
  * Description:       Easy responsive embed of google map and openstreet map
- * Version:           2.0.1
+ * Version:           2.0.2
  * Author:            Codeboxr
  * Author URI:        https://codeboxr.com
  * License:           GPL-2.0+
@@ -33,7 +33,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 defined( 'CBXGOOGLEMAP_PLUGIN_NAME' ) or define( 'CBXGOOGLEMAP_PLUGIN_NAME', 'cbxgooglemap' );
-defined( 'CBXGOOGLEMAP_PLUGIN_VERSION' ) or define( 'CBXGOOGLEMAP_PLUGIN_VERSION', '2.0.1' );
+defined( 'CBXGOOGLEMAP_PLUGIN_VERSION' ) or define( 'CBXGOOGLEMAP_PLUGIN_VERSION', '2.0.2' );
 defined( 'CBXGOOGLEMAP_BASE_NAME' ) or define( 'CBXGOOGLEMAP_BASE_NAME', plugin_basename( __FILE__ ) );
 defined( 'CBXGOOGLEMAP_ROOT_PATH' ) or define( 'CBXGOOGLEMAP_ROOT_PATH', plugin_dir_path( __FILE__ ) );
 defined( 'CBXGOOGLEMAP_ROOT_URL' ) or define( 'CBXGOOGLEMAP_ROOT_URL', plugin_dir_url( __FILE__ ) );
@@ -82,14 +82,14 @@ function cbxgooglemap_compatible_php_version( $version = '' ) {
     return true;
 }//end method cbxgooglemap_compatible_php_version
 
-register_activation_hook( __FILE__, 'activate_cbxgooglemap' );
-register_deactivation_hook( __FILE__, 'deactivate_cbxgooglemap' );
+register_activation_hook( __FILE__, 'cbxgooglemap_activate' );
+register_deactivation_hook( __FILE__, 'cbxgooglemap_deactivate' );
 
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-cbxgooglemap-activator.php
  */
-function activate_cbxgooglemap() {
+function cbxgooglemap_activate() {
 	$wp_version  = CBXGOOGLEMAP_WP_MIN_VERSION;
 	$php_version = CBXGOOGLEMAP_PHP_MIN_VERSION;
 
@@ -114,13 +114,13 @@ function activate_cbxgooglemap() {
         cbxgooglemap_core();
         CBXGooglemapHelper::activate();
     }
-}//end method activate_cbxgooglemap
+}//end method cbxgooglemap_activate
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-cbxgooglemap-deactivator.php
  */
-function deactivate_cbxgooglemap() {
+function cbxgooglemap_deactivate() {
 	CBXGooglemapHelper::deactivate();
 }
 
@@ -133,7 +133,7 @@ function cbxgooglemap_core() { // phpcs:ignore WordPress.NamingConventions.Valid
 	global $cbxgooglemap_core;
 
 	if ( ! isset( $cbxgooglemap_core ) ) {
-		$cbxgooglemap_core = run_cbxgooglemap();
+		$cbxgooglemap_core = cbxgooglemap_run();
 	}
 
 	return $cbxgooglemap_core;
@@ -148,8 +148,8 @@ function cbxgooglemap_core() { // phpcs:ignore WordPress.NamingConventions.Valid
  *
  * @since    1.0.0
  */
-function run_cbxgooglemap() {
+function cbxgooglemap_run() {
 	return CBXGoogleMap::instance();
-}//end method run_cbxgooglemap
+}//end method cbxgooglemap_run
 
-$GLOBALS['cbxgooglemap_core'] = run_cbxgooglemap();
+$GLOBALS['cbxgooglemap_core'] = cbxgooglemap_run();

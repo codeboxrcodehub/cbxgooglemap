@@ -24,14 +24,6 @@ class CBXGoogleMapMisc {
 
 	}//end constructor
 
-	/**
-	 * Load the plugin text domain for translation.
-	 *
-	 * @since    1.0.0
-	 */
-	public function load_plugin_textdomain() {
-		//load_plugin_textdomain('cbxgooglemap',false,CBXGOOGLEMAP_ROOT_PATH . 'languages/');
-	}//end method load_plugin_textdomain
 
 	/**
 	 * Show a notice to anyone who has just installed the plugin for the first time
@@ -117,6 +109,7 @@ class CBXGoogleMapMisc {
 		}
 
 		//if the pro addon is active or installed
+		//phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 		if ( defined( 'CBXGOOGLEMAPPRO_PLUGIN_NAME' ) || in_array( 'cbxgooglemappro/cbxgooglemappro.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 			//plugin is activated
 
@@ -207,7 +200,7 @@ class CBXGoogleMapMisc {
 			$links_array[] = '<a style="color:#39A96B; font-weight: bold;" href="https://wordpress.org/plugins/cbxgooglemap/#reviews" target="_blank">' . esc_attr__( 'Reviews', 'cbxgooglemap' ) . '</a>';
 			$links_array[] = '<a target="_blank" style="color:#f44336 !important; font-weight: bold;" href="https://codeboxr.com/doc/cbxmap-doc/" aria-label="' . esc_attr__( 'Documentation', 'cbxgooglemap' ) . '">' . esc_html__( 'Documentation', 'cbxgooglemap' ) . '</a>';
 
-
+			//phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 			if ( in_array( 'cbxgooglemappro/cbxgooglemappro.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || defined( 'CBXGOOGLEMAPPRO_PLUGIN_NAME' ) ) {
 				$links_array[] = '<a style="color:#39A96B; font-weight: bold;" href="https://codeboxr.com/contact-us/" target="_blank">' . esc_attr__( 'Pro Support', 'cbxgooglemap' ) . '</a>';
 			} else {
@@ -236,7 +229,7 @@ class CBXGoogleMapMisc {
 		}
 
 		$pro_addon_version  = CBXGooglemapHelper::get_any_plugin_version( 'cbxgooglemappro/cbxgooglemappro.php' );
-		$pro_latest_version = '2.0.0';
+		$pro_latest_version = '2.0.2';
 
 		if ( $pro_addon_version != '' && version_compare( $pro_addon_version, $pro_latest_version, '<' ) ) {
 			// Custom message to display

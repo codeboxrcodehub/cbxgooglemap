@@ -487,20 +487,28 @@ final class CBXGoogleMapAdmin
                 if (isset($_POST[$meta_prefix.$id])) {
 
                     if (isset($_POST[$meta_prefix.$id])) {
-                        $updated_value = wp_unslash($_POST[$meta_prefix.$id]);
+                        $updated_value = wp_unslash($_POST[$meta_prefix.$id]);//phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+						$updated_value = is_array($updated_value) ? cbxgooglemap_decode_entities_array($updated_value) : html_entity_decode($updated_value);
 
-                        if ($field_type == 'text') {
-                            $updated_value = sanitize_text_field($updated_value);
-                        } elseif ($field_type == 'textarea') {
-                            $updated_value = sanitize_textarea_field($updated_value);
-                        } else {
-                            if ($sanitize_callback !== null && is_callable($sanitize_callback)) {
-                                $updated_value = call_user_func($sanitize_callback, $updated_value);
-                            }
-                            else{
-                                $updated_value = sanitize_text_field($updated_value);
-                            }
+                        $sanitized = false;
+
+						if ($sanitize_callback !== null && is_callable($sanitize_callback)) {
+							$sanitized = true;
+                            $updated_value = call_user_func($sanitize_callback, $updated_value);
                         }
+	                    elseif ($field_type == 'text') {
+		                    $sanitized = true;
+		                    $updated_value = sanitize_text_field($updated_value);
+	                    } elseif ($field_type == 'textarea') {
+							$sanitized = true;
+		                    $updated_value = sanitize_textarea_field( $updated_value );
+	                    }
+
+                        if(!$sanitized) {
+                            $updated_value = wp_kses_post($updated_value);//general sanitization
+                        }
+
+	                    $updated_value = apply_filters('cbxgooglemap_meta_sanitize_admin', $updated_value, $id, $field, $fields);
 
                         $is_sortable = isset($field['sortable']) ? $field['sortable'] : false;
 

@@ -87,6 +87,7 @@ class CBXGooglemapMetaHelper {
 				'desc'    => esc_html__( 'Map width, use % if need, don\'t use px as it will be automatically if no % used.', 'cbxgooglemap' ),
 				'type'    => 'text',
 				'default' => $width_default,
+				'sanitize_callback' => 'sanitize_text_field'
 			],
 			'height'      => [
 				'label'             => esc_html__( 'Height', 'cbxgooglemap' ),
@@ -140,7 +141,7 @@ class CBXGooglemapMetaHelper {
 				'label'             => esc_html__( 'Marker Heading', 'cbxgooglemap' ),
 				'desc'              => esc_html__( 'Heading title will be used for marker pop info', 'cbxgooglemap' ),
 				'type'              => 'text',
-				'default'           => 'Default Title',
+				'default'           => esc_html__('Default Title', 'cbxgooglemap'),
 				'sanitize_callback' => 'sanitize_text_field'
 			],
 			'address'  => [
@@ -162,6 +163,7 @@ class CBXGooglemapMetaHelper {
 				'desc'    => esc_html__( 'Type location and select from google map auto suggest.', 'cbxgooglemap' ),
 				'type'    => 'location',
 				'default' => '',
+				'sanitize_callback' => 'sanitize_text_field'
 			],
 			'lat'      => [
 				'label'             => esc_html__( 'Latitude', 'cbxgooglemap' ),
