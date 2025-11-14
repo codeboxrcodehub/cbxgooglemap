@@ -99,6 +99,17 @@ $cbxgooglemap_doc_url    = CBXGooglemapHelper::url_utmy('https://codeboxr.com/do
                     <div class="content">
                         <div class="cbx-backend-settings-row">
                             <p>
+                                Version - 2.0.3
+                            </p>
+                            <ul>
+                                <li>[improvement] Pro or Other plugin active checking improved</li>
+                                <li>[updated] Pro addon deactivation notice improved</li>
+                                <li>[updated] Pro addon plugin 2.0.3 released</li>
+                                <li>[updated] Misc changes</li>
+                            </ul>
+                        </div>
+                        <div class="cbx-backend-settings-row">
+                            <p>
                                 Version - 2.0.2
                             </p>
                             <ul>
@@ -115,17 +126,6 @@ $cbxgooglemap_doc_url    = CBXGooglemapHelper::url_utmy('https://codeboxr.com/do
                                 <li>[improvement] Minor sanitization improvement</li>
                             </ul>
                         </div>
-                        <div class="cbx-backend-settings-row">
-                            <p>
-                                Version - 2.0.0
-                            </p>
-                            <ul>
-                                <li>[new] Backend UI refreshed with latest design</li>
-                                <li>[new] Fully revamped</li>
-                                <li>[new] Setting save bug</li>
-                                <li>[improvement] WordPress 6.8 compatible</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <div class="cbx-backend-card dashboard-changelog">
@@ -135,6 +135,15 @@ $cbxgooglemap_doc_url    = CBXGooglemapHelper::url_utmy('https://codeboxr.com/do
                         </div>
                     </div>
                     <div class="content">
+                        <div class="cbx-backend-settings-row">
+                            <p>
+                                Version - 2.0.3
+                            </p>
+                            <ul>
+                                <li>[improvement] Misc Improvement</li>
+                                <li>[updated] Core plugin 2.0.3 released</li>
+                            </ul>
+                        </div>
                         <div class="cbx-backend-settings-row">
                             <p>
                                 Version - 2.0.2
@@ -150,15 +159,6 @@ $cbxgooglemap_doc_url    = CBXGooglemapHelper::url_utmy('https://codeboxr.com/do
                             </p>
                             <ul>
                                 <li>[Improvement] Sanitization improvement for shortcode</li>
-                            </ul>
-                        </div>
-                        <div class="cbx-backend-settings-row">
-                            <p>
-                                Version - 2.0.0
-                            </p>
-                            <ul>
-                                <li>[new] Backend UI refreshed with latest design</li>
-                                <li>[improvement] WordPress 6.8 compatible</li>
                             </ul>
                         </div>
                     </div>

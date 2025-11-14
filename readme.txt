@@ -4,7 +4,7 @@ Donate link: https://codeboxr.com
 Tags: google map, openstreetmap, openstreet, gutenberg block, elementor addons
 Requires at least: 5.3
 Tested up to: 6.8
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -107,6 +107,12 @@ Not at this moment
 6. CBX Map frontend
 
 == Changelog ==
+= 2.0.3 =
+* [improvement] Pro or Other plugin active checking improved
+* [updated] Pro addon deactivation notice improved
+* [updated] Pro addon plugin 2.0.3 released
+* [updated] Misc changes
+
 = 2.0.2 =
 * [improvement] Shortcode display sanitization and escape improvement
 * [improvement] Meta save sanitization improvement

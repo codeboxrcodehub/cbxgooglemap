@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2025-11-10 06:35+0000\n"
+"POT-Creation-Date: 2025-11-14 18:28+0000\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -14,7 +14,7 @@ msgid "%s does not exist."
 msgstr ""
 
 #. translators:translators: %s: plugin setting url for licence
-#: includes/CBXGoogleMapMisc.php:241
+#: includes/CBXGoogleMapMisc.php:221
 #, php-format
 msgid ""
 "<strong>Note:</strong> CBX Map Pro Addon is custom plugin. This plugin can "
@@ -69,13 +69,13 @@ msgid "CBX Blocks"
 msgstr ""
 
 #. PHP version
-#: cbxgooglemap.php:110
+#: cbxgooglemap.php:111
 #, php-format
 msgid "CBX Google Map plugin requires PHP %s or higher!"
 msgstr ""
 
 #. WordPress version
-#: cbxgooglemap.php:102
+#: cbxgooglemap.php:103
 #, php-format
 msgid "CBX Google Map plugin requires WordPress %s or higher!"
 msgstr ""
@@ -100,7 +100,7 @@ msgstr ""
 msgid "CBX Map for Google Map & OpenStreetMap"
 msgstr ""
 
-#: templates/admin/support.php:197
+#: templates/admin/support.php:182
 msgid "CBX Map for Google Map & OpenStreetMap for WordPress"
 msgstr ""
 
@@ -108,15 +108,8 @@ msgstr ""
 msgid "CBX Map Helps & Updates"
 msgstr ""
 
-#: includes/CBXGoogleMapMisc.php:120
-msgid ""
-"CBX Map Pro Addon current version is not compatible with the latest CBX Map "
-"core plugin. Please update CBX Map Pro Addon to version 2.0.0 or later  - "
-"Codeboxr Team"
-msgstr ""
-
 #. %s: Plugin Link
-#: includes/CBXGoogleMapMisc.php:125
+#: includes/CBXGoogleMapMisc.php:114
 #, php-format
 msgid ""
 "CBX Map Pro Addon has distance search based listing, multiple marker in one "
@@ -125,7 +118,7 @@ msgid ""
 msgstr ""
 
 #. PHP Version
-#: includes/CBXGoogleMap.php:214
+#: includes/CBXGoogleMap.php:211
 #, php-format
 msgid "CBX Map requires at least PHP %s. Please upgrade PHP to run CBX Map."
 msgstr ""
@@ -184,7 +177,7 @@ msgstr ""
 msgid "Changelog Core Plugin"
 msgstr ""
 
-#: templates/admin/support.php:146
+#: templates/admin/support.php:134
 msgid "Changelog Pro Addon"
 msgstr ""
 
@@ -199,12 +192,12 @@ msgid ""
 msgstr ""
 
 #: includes/CBXGooglemapSettings.php:469
-#: includes/Helpers/CBXGooglemapHelper.php:555
+#: includes/Helpers/CBXGooglemapHelper.php:536
 msgid "Check All"
 msgstr ""
 
 #. 1: Plugin Manual Download Link 2: Plugin Manual Download Link
-#: includes/CBXGoogleMapMisc.php:135
+#: includes/CBXGoogleMapMisc.php:124
 #, php-format
 msgid ""
 "Check how to <a style=\"color:#9c27b0 !important; font-weight: bold;\" "
@@ -277,7 +270,7 @@ msgstr ""
 msgid "Codeboxr"
 msgstr ""
 
-#: templates/admin/support.php:305
+#: templates/admin/support.php:290
 msgid "Codeboxr News Updates"
 msgstr ""
 
@@ -325,16 +318,15 @@ msgstr ""
 msgid "Copy"
 msgstr ""
 
-#: templates/admin/support.php:226
+#: templates/admin/support.php:211
 msgid "Core Plugin Support"
 msgstr ""
 
-#: includes/CBXGoogleMapMisc.php:95
+#: includes/CBXGoogleMapMisc.php:97
 msgid ""
-"Currently installed <strong>CBX Map for Google Map & OpenStreetMap Pro "
-"Addon</strong> version 1.0.5(or earlier) is not compatible with the latest "
-"version of core plugin CBX Map for Google Map & OpenStreetMap V1.1.12 or "
-"later. - Codeboxr Team"
+"Current version of CBX Map Pro Addon is not compatible with core CBX Map. "
+"CBX Map Pro Addon is forced deactivate. Update CBX Map Pro Addon to V2.0.0 "
+"or later."
 msgstr ""
 
 #: includes/CBXGoogleMapAdmin.php:1045
@@ -387,11 +379,11 @@ msgstr ""
 msgid "Disable"
 msgstr ""
 
-#: includes/CBXGoogleMapMisc.php:201
+#: includes/CBXGoogleMapMisc.php:186
 msgid "Documentation"
 msgstr ""
 
-#: templates/admin/support.php:207
+#: templates/admin/support.php:192
 msgid "Documentation & User Guide"
 msgstr ""
 
@@ -442,7 +434,7 @@ msgstr ""
 msgid "files selected"
 msgstr ""
 
-#: includes/CBXGoogleMapMisc.php:199
+#: includes/CBXGoogleMapMisc.php:184
 msgid "Free Support"
 msgstr ""
 
@@ -507,7 +499,7 @@ msgstr ""
 msgid "Height(only Numeric)"
 msgstr ""
 
-#: templates/admin/support.php:186
+#: templates/admin/support.php:171
 msgid "Help & Supports"
 msgstr ""
 
@@ -699,7 +691,7 @@ msgstr ""
 msgid "New Map"
 msgstr ""
 
-#: templates/admin/support.php:244
+#: templates/admin/support.php:229
 msgid "New Plugins: HRM & ERP "
 msgstr ""
 
@@ -749,13 +741,13 @@ msgstr ""
 msgid "Openstreet Map(leafletjs)"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:562
-#: includes/Helpers/CBXGooglemapHelper.php:583
+#: includes/Helpers/CBXGooglemapHelper.php:543
+#: includes/Helpers/CBXGooglemapHelper.php:564
 msgid "Option ID"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:561
-#: includes/Helpers/CBXGooglemapHelper.php:582
+#: includes/Helpers/CBXGooglemapHelper.php:542
+#: includes/Helpers/CBXGooglemapHelper.php:563
 msgid "Option Name"
 msgstr ""
 
@@ -763,7 +755,7 @@ msgstr ""
 msgid "Option section setting failed, as no section id is empty"
 msgstr ""
 
-#: templates/admin/support.php:270
+#: templates/admin/support.php:255
 msgid "Other WordPress Plugins"
 msgstr ""
 
@@ -883,11 +875,11 @@ msgstr ""
 msgid "Primary Marker"
 msgstr ""
 
-#: templates/admin/support.php:236
+#: templates/admin/support.php:221
 msgid "Pro Addon Support"
 msgstr ""
 
-#: includes/CBXGoogleMapMisc.php:205
+#: includes/CBXGoogleMapMisc.php:187
 msgid "Pro Support"
 msgstr ""
 
@@ -907,11 +899,11 @@ msgstr ""
 msgid "Reset Sections"
 msgstr ""
 
-#: includes/CBXGoogleMapMisc.php:200
+#: includes/CBXGoogleMapMisc.php:185
 msgid "Reviews"
 msgstr ""
 
-#: templates/admin/support.php:216
+#: templates/admin/support.php:201
 msgid "Reviews & Ratings"
 msgstr ""
 
@@ -977,7 +969,7 @@ msgstr ""
 msgid "selection slider"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:341 includes/CBXGoogleMapMisc.php:173
+#: includes/CBXGoogleMapAdmin.php:341 includes/CBXGoogleMapMisc.php:162
 msgid "Settings"
 msgstr ""
 
@@ -1115,7 +1107,7 @@ msgstr ""
 msgid "Tools Settings"
 msgstr ""
 
-#: includes/CBXGoogleMapMisc.php:207
+#: includes/CBXGoogleMapMisc.php:188
 msgid "Try Pro Addon"
 msgstr ""
 
@@ -1128,7 +1120,7 @@ msgid "Type location and select from google map auto suggest."
 msgstr ""
 
 #: includes/CBXGooglemapSettings.php:469
-#: includes/Helpers/CBXGooglemapHelper.php:556
+#: includes/Helpers/CBXGooglemapHelper.php:537
 msgid "Uncheck All"
 msgstr ""
 

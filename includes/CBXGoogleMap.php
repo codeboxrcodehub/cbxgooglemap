@@ -116,15 +116,12 @@ final class CBXGoogleMap {
 	private function define_common_hooks() {
 		$misc = new CBXGoogleMapMisc();
 
-		//upgrade process
-		//add_action('admin_init', [$misc, 'admin_init_upgrader_process']);
-		//add_action( 'upgrader_process_complete', [ $misc, 'plugin_upgrader_process_complete' ], 10, 2 );
-
         add_action( 'plugins_loaded', [ $misc, 'plugin_upgrader_process_complete' ] );
 		add_action( 'admin_notices', [ $misc, 'plugin_activate_upgrade_notices' ] );
         add_filter( 'plugin_action_links_' . CBXGOOGLEMAP_BASE_NAME, [ $misc, 'plugin_listing_setting_link' ] );
         add_filter( 'plugin_row_meta', [ $misc, 'custom_plugin_row_meta' ], 10, 4 );
 
+		add_action( 'activated_plugin', [ $misc, 'check_pro_addon' ] );
 		add_action( 'init', [ $misc, 'check_pro_addon' ] );
 		add_action( 'after_plugin_row_cbxgooglemappro/cbxgooglemappro.php', [
 			$misc,

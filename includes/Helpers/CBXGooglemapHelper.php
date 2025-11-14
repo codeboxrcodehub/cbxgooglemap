@@ -512,25 +512,6 @@ class CBXGooglemapHelper {
 		CBXGooglemapHelper::create_googlemap_post_type();
 
 		add_option( 'cbxgooglemap_flush_rewrite_rules', 'true' );
-		//set_transient( 'cbxgooglemap_activated_notice', 1 );
-
-
-		if ( ! function_exists( 'is_plugin_active' ) ) {
-			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-		}
-
-		//phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
-		if ( defined( 'CBXGOOGLEMAPPRO_PLUGIN_NAME' ) || in_array( 'cbxgooglemappro/cbxgooglemappro.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-			//plugin is activated
-
-			$plugin_version = CBXGOOGLEMAPPRO_PLUGIN_VERSION;
-
-			if ( version_compare( $plugin_version, '2.0.0', '<' ) ) {
-				deactivate_plugins( 'cbxgooglemappro/cbxgooglemappro.php' );
-				set_transient( 'cbxgooglemappro_deactivated_notice', 1 );
-			}
-		}
-
 	}//end activate
 
 	/**

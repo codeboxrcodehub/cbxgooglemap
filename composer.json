@@ -3,9 +3,6 @@
   "description": "cbx googlemap plugin",
   "type": "library",
   "license": "MIT",
-  "config": {
-    "vendor-dir": "vendor"
-  },
   "require": {
     "enshrined/svg-sanitize": "dev-master"
   },
@@ -19,5 +16,11 @@
     ]
   },
   "replace": {
+    "symfony/console": "*",
+    "symfony/translation": "*",
+    "symfony/translation-contracts": "*"
+  },
+  "config": {
+    "platform-check": false
   }
 }
