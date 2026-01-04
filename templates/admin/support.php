@@ -93,10 +93,21 @@ $cbxgooglemap_doc_url    = CBXGooglemapHelper::url_utmy('https://codeboxr.com/do
                 <div class="cbx-backend-card dashboard-changelog">
                     <div class="header">
                         <div class="text">
-                            <h2><?php esc_html_e('Changelog Core Plugin', 'cbxgooglemap'); ?></h2>
+                            <h2><?php esc_html_e('Changelog for core Plugin', 'cbxgooglemap'); ?></h2>
                         </div>
                     </div>
                     <div class="content">
+                        <div class="cbx-backend-settings-row">
+                            <p>
+                                Version - 2.0.4
+                            </p>
+                            <ul>
+                                <li>[improvement] If google map api key missing better js loading</li>
+                                <li>[updated] Plugin Check 1.8.0 compatible</li>
+                                <li>[updated] Pro addon plugin 2.0.4 released</li>
+                                <li>[updated] Misc changes</li>
+                            </ul>
+                        </div>
                         <div class="cbx-backend-settings-row">
                             <p>
                                 Version - 2.0.3
@@ -118,23 +129,25 @@ $cbxgooglemap_doc_url    = CBXGooglemapHelper::url_utmy('https://codeboxr.com/do
                                 <li>[updated] Pro Addon 2.0.2 released</li>
                             </ul>
                         </div>
-                        <div class="cbx-backend-settings-row">
-                            <p>
-                                Version - 2.0.1
-                            </p>
-                            <ul>
-                                <li>[improvement] Minor sanitization improvement</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <div class="cbx-backend-card dashboard-changelog">
                     <div class="header">
                         <div class="text">
-                            <h2><?php esc_html_e('Changelog Pro Addon', 'cbxgooglemap'); ?></h2>
+                            <h2><?php esc_html_e('Changelog for pro Addon', 'cbxgooglemap'); ?></h2>
                         </div>
                     </div>
                     <div class="content">
+                        <div class="cbx-backend-settings-row">
+                            <p>
+                                Version - 2.0.4
+                            </p>
+                            <ul>
+                                <li>[new] Auto update implemented(need licence key)</li>
+                                <li>[updated] Plugin Check 1.8.0 compatible</li>
+                                <li>[updated] Core plugin 2.0.4 released</li>
+                            </ul>
+                        </div>
                         <div class="cbx-backend-settings-row">
                             <p>
                                 Version - 2.0.3
@@ -151,14 +164,6 @@ $cbxgooglemap_doc_url    = CBXGooglemapHelper::url_utmy('https://codeboxr.com/do
                             <ul>
                                 <li>[improvement] Misc changes, Plugin check error fix</li>
                                 <li>[updated] Core plugin 2.0.2 released</li>
-                            </ul>
-                        </div>
-                        <div class="cbx-backend-settings-row">
-                            <p>
-                                Version - 2.0.1
-                            </p>
-                            <ul>
-                                <li>[Improvement] Sanitization improvement for shortcode</li>
                             </ul>
                         </div>
                     </div>

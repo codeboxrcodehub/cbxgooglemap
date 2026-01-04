@@ -21,17 +21,27 @@
     $(document).ready(function ($) {
         var cbxgooglemap_awn_options = {
             labels: {
-                tip          : cbxgooglemap_edit.awn_options.tip,
-                info         : cbxgooglemap_edit.awn_options.info,
-                success      : cbxgooglemap_edit.awn_options.success,
-                warning      : cbxgooglemap_edit.awn_options.warning,
-                alert        : cbxgooglemap_edit.awn_options.alert,
-                async        : cbxgooglemap_edit.awn_options.async,
-                confirm      : cbxgooglemap_edit.awn_options.confirm,
-                confirmOk    : cbxgooglemap_edit.awn_options.confirmOk,
+                tip: cbxgooglemap_edit.awn_options.tip,
+                info: cbxgooglemap_edit.awn_options.info,
+                success: cbxgooglemap_edit.awn_options.success,
+                warning: cbxgooglemap_edit.awn_options.warning,
+                alert: cbxgooglemap_edit.awn_options.alert,
+                async: cbxgooglemap_edit.awn_options.async,
+                confirm: cbxgooglemap_edit.awn_options.confirm,
+                confirmOk: cbxgooglemap_edit.awn_options.confirmOk,
                 confirmCancel: cbxgooglemap_edit.awn_options.confirmCancel
             }
         };
+
+        //console.log(cbxgooglemap_edit);
+
+        /*
+        if (cbxgooglemap_edit.api_key == '' && cbxgooglemap_edit.map_source == 1) {
+            new AWN().info(cbxgooglemap_edit.no_api_key, {
+                durations: {alert: 0},
+                icons: {enabled: false }
+            });
+        }*/
 
         let notifier = new AWN(cbxgooglemap_awn_options);
 
@@ -42,7 +52,7 @@
 
         $('.selecttwo-select').select2({
             placeholder: cbxgooglemap_edit.please_select,
-            allowClear : false
+            allowClear: false
         });
 
 
@@ -53,8 +63,8 @@
 
             // Create the media frame.
             var file_frame = wp.media.frames.file_frame = wp.media({
-                title   : self.data('uploader_title'),
-                button  : {
+                title: self.data('uploader_title'),
+                button: {
                     text: self.data('uploader_button_text')
                 },
                 multiple: false
@@ -186,9 +196,9 @@
 
                         // The map, centered at Primary marker
                         $cbxmap = new google.maps.Map($meta_map[0], {
-                            zoom            : $zoom_val,
-                            center          : $latlng,
-                            mapTypeId       : $map_type,
+                            zoom: $zoom_val,
+                            center: $latlng,
+                            mapTypeId: $map_type,
                             disableDefaultUI: true
                         });
 
@@ -196,7 +206,7 @@
 // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
 
 // Attach autocomplete to your input element
-                        var input = $element[0]; // jQuery to raw DOM element
+                        var input        = $element[0]; // jQuery to raw DOM element
                         var autocomplete = new google.maps.places.Autocomplete(input);
 
 // Optional: bias search results to the map’s current viewport
@@ -242,11 +252,11 @@
 
                             if (place.address_components) {
                                 var street_number = "";
-                                var route = "";
-                                var city = "";
-                                var state = "";
-                                var postal = "";
-                                var country = "";
+                                var route         = "";
+                                var city          = "";
+                                var state         = "";
+                                var postal        = "";
+                                var country       = "";
 
                                 place.address_components.forEach(function (comp) {
                                     if (comp.types.includes("street_number")) {
@@ -281,7 +291,6 @@
                         });
 
 
-
                         if ($icon_url == '') {
                             /*var $map_icon = {
                                 url: $icon_url,
@@ -289,24 +298,24 @@
                             };*/
 
                             $marker = new google.maps.Marker({
-                                position : $latlng,
-                                map      : $cbxmap,
-                                title    : $heading,
+                                position: $latlng,
+                                map: $cbxmap,
+                                title: $heading,
                                 draggable: true,
                                 //icon: $map_icon,
                             });
                         } else {
                             var $map_icon = {
-                                url       : $icon_url,
+                                url: $icon_url,
                                 scaledSize: new google.maps.Size(50, 50)
                             };
 
                             $marker = new google.maps.Marker({
-                                position : $latlng,
-                                map      : $cbxmap,
-                                title    : $heading,
+                                position: $latlng,
+                                map: $cbxmap,
+                                title: $heading,
                                 draggable: true,
-                                icon     : $map_icon,
+                                icon: $map_icon,
                             });
                         }
 
@@ -361,8 +370,7 @@
 
                     }//end if apy key exits
 
-                }
-                else {
+                } else {
                     //open street map
 
                     //at first destroy the map
@@ -381,11 +389,11 @@
                     // Add OSM geocoder control
                     //json data https://gist.github.com/manchumahara/c4a81781c3bec1588b175ae762f8f8e5
                     var osmGeocoder = L.Control.geocoder({
-                        geocoder          : new L.Control.Geocoder.Nominatim(),
-                        placeholder       : cbxgooglemap_edit.search_address,
+                        geocoder: new L.Control.Geocoder.Nominatim(),
+                        placeholder: cbxgooglemap_edit.search_address,
                         defaultMarkGeocode: false,
-                        collapsed         : false,
-                        position          : 'topright'
+                        collapsed: false,
+                        position: 'topright'
                     }).on('markgeocode', function (e) {
                         var bbox    = e.geocode.bbox;
                         var center  = bbox.getCenter();
@@ -548,14 +556,14 @@
 
                     if ($icon_url !== '') {
                         var $map_icon = L.icon({
-                            iconUrl    : $icon_url,
-                            iconSize   : [50, 50],
+                            iconUrl: $icon_url,
+                            iconSize: [50, 50],
                             popupAnchor: [15, 0]
                         });
 
                         $marker = L.marker([$current_lat, $current_lng], {
                             draggable: true,
-                            icon     : $map_icon
+                            icon: $map_icon
                         }).addTo($cbxmap);
                     } else {
                         $marker = L.marker([$current_lat, $current_lng], {

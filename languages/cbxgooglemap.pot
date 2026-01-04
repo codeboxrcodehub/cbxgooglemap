@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2025-11-14 18:28+0000\n"
+"POT-Creation-Date: 2026-01-02 17:43+0000\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -25,11 +25,11 @@ msgid ""
 "%2$s or later.</strong>"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:99
+#: includes/Helpers/CBXGooglemapHelper.php:97
 msgid "Add New"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:98
+#: includes/Helpers/CBXGooglemapHelper.php:96
 msgid "Add New Map"
 msgstr ""
 
@@ -39,32 +39,32 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:150
+#: includes/CBXGoogleMapAdmin.php:145
 msgid "Api Key"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:384
+#: includes/Helpers/CBXGooglemapHelper.php:382
 msgid "Are you sure?"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:410
+#: includes/Helpers/CBXGooglemapHelper.php:408
 msgid "Attention"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:192
+#: includes/Helpers/CBXGooglemapHelper.php:190
 msgid "Built in post types"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:394
-#: includes/Helpers/CBXGooglemapHelper.php:415
+#: includes/Helpers/CBXGooglemapHelper.php:392
+#: includes/Helpers/CBXGooglemapHelper.php:413
 msgid "Cancel"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:399
+#: includes/Helpers/CBXGooglemapHelper.php:397
 msgid "cancel and close"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1240
+#: includes/CBXGoogleMapAdmin.php:1230
 msgid "CBX Blocks"
 msgstr ""
 
@@ -80,15 +80,15 @@ msgstr ""
 msgid "CBX Google Map plugin requires WordPress %s or higher!"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1269
+#: includes/CBXGoogleMapAdmin.php:1257
 msgid "CBX Google Map reset setting html loaded successfully"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1295
+#: includes/CBXGoogleMapAdmin.php:1282
 msgid "CBX Google Map setting options reset successfully"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1415
+#: includes/CBXGoogleMapAdmin.php:1400
 msgid "CBX Google Map Settings imported successfully"
 msgstr ""
 
@@ -100,11 +100,11 @@ msgstr ""
 msgid "CBX Map for Google Map & OpenStreetMap"
 msgstr ""
 
-#: templates/admin/support.php:182
+#: templates/admin/support.php:187
 msgid "CBX Map for Google Map & OpenStreetMap for WordPress"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:346
+#: includes/CBXGoogleMapAdmin.php:342
 msgid "CBX Map Helps & Updates"
 msgstr ""
 
@@ -123,7 +123,7 @@ msgstr ""
 msgid "CBX Map requires at least PHP %s. Please upgrade PHP to run CBX Map."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1040
+#: includes/CBXGoogleMapAdmin.php:1032
 msgid "CBX Map Settings"
 msgstr ""
 
@@ -139,14 +139,14 @@ msgstr ""
 msgid "CBX Map: Loation Map"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1036
+#: includes/CBXGoogleMapAdmin.php:1028
 #: includes/Widgets/Classic/CBXGoogleMapWidget.php:34
 #: includes/Widgets/Classic/CBXGoogleMapWidget.php:66
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:39
 msgid "CBX Map: Location Map"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:341
+#: includes/CBXGoogleMapAdmin.php:336
 msgid "CBX Map: Settings"
 msgstr ""
 
@@ -154,31 +154,31 @@ msgstr ""
 msgid "CBX Map: Support & Docs"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:94
+#: includes/Helpers/CBXGooglemapHelper.php:92
 msgid "CBX Maps"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:382
+#: includes/Helpers/CBXGooglemapHelper.php:380
 msgctxt "cbxgooglemap-dialog"
 msgid "Cancel"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:383
+#: includes/Helpers/CBXGooglemapHelper.php:381
 msgctxt "cbxgooglemap-dialog"
 msgid "Delete"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:381
+#: includes/Helpers/CBXGooglemapHelper.php:379
 msgctxt "cbxgooglemap-dialog"
 msgid "Ok"
 msgstr ""
 
 #: templates/admin/support.php:96
-msgid "Changelog Core Plugin"
+msgid "Changelog for core Plugin"
 msgstr ""
 
-#: templates/admin/support.php:134
-msgid "Changelog Pro Addon"
+#: templates/admin/support.php:137
+msgid "Changelog for pro Addon"
 msgstr ""
 
 #. 1: Admin URL 2: Admin URL
@@ -192,7 +192,7 @@ msgid ""
 msgstr ""
 
 #: includes/CBXGooglemapSettings.php:469
-#: includes/Helpers/CBXGooglemapHelper.php:536
+#: includes/Helpers/CBXGooglemapHelper.php:534
 msgid "Check All"
 msgstr ""
 
@@ -206,7 +206,7 @@ msgid ""
 "href=\"%2$s\"><strong>My Account</strong></a> section of Codeboxr.com"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:445
+#: includes/Helpers/CBXGooglemapHelper.php:443
 msgid "Choose"
 msgstr ""
 
@@ -219,7 +219,7 @@ msgstr ""
 msgid "Choose File"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:447
+#: includes/Helpers/CBXGooglemapHelper.php:445
 msgid "Choose Files to Upload"
 msgstr ""
 
@@ -233,15 +233,15 @@ msgstr ""
 msgid "Choose Ready Map or Use custom params"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1044
+#: includes/CBXGoogleMapAdmin.php:1036
 msgid "Choose saved map or create from custom attributes below"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:395
+#: includes/Helpers/CBXGooglemapHelper.php:393
 msgid "Clear"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:400
+#: includes/Helpers/CBXGooglemapHelper.php:398
 msgid "clear and close"
 msgstr ""
 
@@ -253,7 +253,7 @@ msgstr ""
 msgid "Click to clipboard"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:377
+#: includes/Helpers/CBXGooglemapHelper.php:375
 #: templates/admin/metabox_shortcode.php:20
 msgid "Click to copy"
 msgstr ""
@@ -270,31 +270,31 @@ msgstr ""
 msgid "Codeboxr"
 msgstr ""
 
-#: templates/admin/support.php:290
+#: templates/admin/support.php:295
 msgid "Codeboxr News Updates"
 msgstr ""
 
-#: includes/CBXGoogleMapPublic.php:381
+#: includes/CBXGoogleMapPublic.php:391
 msgid "Codeboxr Widgets"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:401
+#: includes/Helpers/CBXGooglemapHelper.php:399
 msgid "color input field"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:389
+#: includes/Helpers/CBXGooglemapHelper.php:387
 msgid "color picker dialog"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:402
+#: includes/Helpers/CBXGooglemapHelper.php:400
 msgid "color selection area"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:391
+#: includes/Helpers/CBXGooglemapHelper.php:389
 msgid "color swatch"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1463
+#: includes/CBXGoogleMapAdmin.php:1447
 msgid "Comfort Google Map setting section reset successfully"
 msgstr ""
 
@@ -302,23 +302,23 @@ msgstr ""
 msgid "Coming Soon ..."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:413
+#: includes/Helpers/CBXGooglemapHelper.php:411
 msgid "Confirmation"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:376
+#: includes/Helpers/CBXGooglemapHelper.php:374
 msgid "Copied"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:378
+#: includes/Helpers/CBXGooglemapHelper.php:376
 msgid "Copied to clipboard"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:375
+#: includes/Helpers/CBXGooglemapHelper.php:373
 msgid "Copy"
 msgstr ""
 
-#: templates/admin/support.php:211
+#: templates/admin/support.php:216
 msgid "Core Plugin Support"
 msgstr ""
 
@@ -329,21 +329,21 @@ msgid ""
 "or later."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1045
+#: includes/CBXGoogleMapAdmin.php:1037
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:152
 #: includes/Widgets/Classic/views/admin.php:62
 msgid "Custom Map Attributes"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:103 includes/CBXGoogleMapAdmin.php:132
+#: includes/CBXGoogleMapAdmin.php:99 includes/CBXGoogleMapAdmin.php:127
 msgid "Default Config"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:190
+#: includes/CBXGoogleMapAdmin.php:186
 msgid "Default height 300 as px, put any numeric value."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:182
+#: includes/CBXGoogleMapAdmin.php:177
 msgid ""
 "Default is 100% to make the map responsive, if you want any fixed width then "
 "don't put, % or just put numeric value, don't px with numeric value"
@@ -353,11 +353,11 @@ msgstr ""
 msgid "Default Title"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:172
+#: includes/CBXGoogleMapAdmin.php:167
 msgid "Default Zoom Level"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:280
+#: includes/CBXGoogleMapAdmin.php:276
 msgid ""
 "Delete Global Config data(options/plugin settings), custom table(s), "
 "files/folders, all map custom post type created by this plugin on uninstall. "
@@ -365,11 +365,11 @@ msgid ""
 "keep full database and files backup before doing this."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:107 includes/CBXGoogleMapAdmin.php:256
+#: includes/CBXGoogleMapAdmin.php:103 includes/CBXGoogleMapAdmin.php:252
 msgid "Demo & Shortcodes"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:202 includes/CBXGoogleMapAdmin.php:215
+#: includes/CBXGoogleMapAdmin.php:198 includes/CBXGoogleMapAdmin.php:211
 #: includes/Helpers/CBXGooglemapMetaHelper.php:107
 #: includes/Helpers/CBXGooglemapMetaHelper.php:120
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:231
@@ -383,7 +383,7 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#: templates/admin/support.php:192
+#: templates/admin/support.php:197
 msgid "Documentation & User Guide"
 msgstr ""
 
@@ -395,11 +395,11 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:100
+#: includes/Helpers/CBXGooglemapHelper.php:98
 msgid "Edit Map"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:203 includes/CBXGoogleMapAdmin.php:216
+#: includes/CBXGoogleMapAdmin.php:199 includes/CBXGoogleMapAdmin.php:212
 #: includes/Helpers/CBXGooglemapMetaHelper.php:106
 #: includes/Helpers/CBXGooglemapMetaHelper.php:119
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:230
@@ -409,12 +409,12 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:198
+#: includes/CBXGoogleMapAdmin.php:194
 #: includes/Helpers/CBXGooglemapMetaHelper.php:101
 msgid "Enable/disable mouse scroll whell"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:411
+#: includes/Helpers/CBXGooglemapHelper.php:409
 msgid "Error"
 msgstr ""
 
@@ -430,7 +430,7 @@ msgstr ""
 msgid "Export/Import"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:448
+#: includes/Helpers/CBXGooglemapHelper.php:446
 msgid "files selected"
 msgstr ""
 
@@ -442,52 +442,58 @@ msgstr ""
 msgid "Get Free & Pro Addons"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:854 includes/CBXGoogleMapAdmin.php:938
+#: includes/CBXGoogleMapAdmin.php:842 includes/CBXGoogleMapAdmin.php:928
 #: templates/admin/support.php:24
 msgid "Global Settings"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:143
+#: includes/CBXGoogleMapAdmin.php:138
 msgid "Google Map"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:151
+#: includes/CBXGoogleMapAdmin.php:146
 msgid "Google map api key"
 msgstr ""
 
-#: includes/CBXGoogleMapPublic.php:201
-msgid "Google Map Api Key is invalid or empty. Please set in plugin setting."
-msgstr ""
-
-#: includes/CBXGoogleMapAdmin.php:1150
+#: includes/CBXGoogleMapAdmin.php:1141
 #: includes/Widgets/Classic/CBXGoogleMapWidget.php:82
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:326
 msgid "Google Map Api Key is invalid!"
 msgstr ""
 
-#. %s: Admin URL
-#: includes/Helpers/CBXGooglemapMetaHelper.php:300
+#: includes/Helpers/CBXGooglemapMetaHelper.php:308
 #, php-format
 msgid ""
 "Google map api key missing, alternative openstreet map can be enabled from "
 "<a href=\"%s\" target=\"_blank\">global setting</a>"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:166
+#: includes/CBXGoogleMapPublic.php:209
+msgid ""
+"Google map api key missing, Please choose alternative openstreet map or set "
+"google map api key in plugin setting."
+msgstr ""
+
+#: includes/CBXGoogleMapAdmin.php:161
 #: includes/Helpers/CBXGooglemapMetaHelper.php:75
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:170
 msgid "Google Map only"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1336
+#: includes/CBXGoogleMapAdmin.php:1322
 msgid "Google Map setting exported successfully"
+msgstr ""
+
+#: includes/CBXGoogleMapPublic.php:208
+#: includes/Helpers/CBXGooglemapMetaHelper.php:307
+msgid "Googlemap Api Key Missing"
 msgstr ""
 
 #: includes/Helpers/CBXGooglemapMetaHelper.php:142
 msgid "Heading title will be used for marker pop info"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:189
+#: includes/CBXGoogleMapAdmin.php:185
 #: includes/Helpers/CBXGooglemapMetaHelper.php:93
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:207
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:209
@@ -495,23 +501,23 @@ msgstr ""
 msgid "Height"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1051
+#: includes/CBXGoogleMapAdmin.php:1043
 msgid "Height(only Numeric)"
 msgstr ""
 
-#: templates/admin/support.php:171
+#: templates/admin/support.php:176
 msgid "Help & Supports"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:346
+#: includes/CBXGoogleMapAdmin.php:342
 msgid "Helps & Updates"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:246
+#: includes/CBXGoogleMapAdmin.php:242
 msgid "Hide"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:241
+#: includes/CBXGoogleMapAdmin.php:237
 msgid "Hide Leaflet Branding"
 msgstr ""
 
@@ -523,13 +529,13 @@ msgstr ""
 msgid "https://codeboxr.com/product/cbx-google-map-for-wordpress/"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:403
+#: includes/Helpers/CBXGooglemapHelper.php:401
 msgid "hue selection slider"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:163
-#: includes/Helpers/CBXGooglemapHelper.php:283
-#: includes/Helpers/CBXGooglemapHelper.php:307
+#: includes/CBXGoogleMapAdmin.php:158
+#: includes/Helpers/CBXGooglemapHelper.php:281
+#: includes/Helpers/CBXGooglemapHelper.php:305
 #: includes/Helpers/CBXGooglemapMetaHelper.php:72
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:166
 #: includes/Widgets/Classic/views/admin.php:69
@@ -558,21 +564,21 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:863
+#: includes/CBXGoogleMapAdmin.php:852
 msgid "Import CBX Google Map Setting: Json file"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:408
+#: includes/Helpers/CBXGooglemapHelper.php:406
 msgid "Info"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:223
+#: includes/CBXGoogleMapAdmin.php:219
 #: includes/Helpers/CBXGooglemapMetaHelper.php:126
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:253
 msgid "Info/Popup Window"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1048
+#: includes/CBXGoogleMapAdmin.php:1040
 #: includes/Helpers/CBXGooglemapMetaHelper.php:169
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:177
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:179
@@ -580,20 +586,20 @@ msgstr ""
 msgid "Latitude"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:412
+#: includes/Helpers/CBXGooglemapHelper.php:410
 msgid "Loading"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:126
+#: includes/CBXGoogleMapAdmin.php:121
 msgid "Loading ..."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1057
+#: includes/CBXGoogleMapAdmin.php:1049
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:276
 msgid "Location Address"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1049
+#: includes/CBXGoogleMapAdmin.php:1041
 #: includes/Helpers/CBXGooglemapMetaHelper.php:177
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:187
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:189
@@ -609,7 +615,7 @@ msgstr ""
 msgid "Map height, don't use px"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:235 includes/CBXGoogleMapAdmin.php:1059
+#: includes/CBXGoogleMapAdmin.php:231 includes/CBXGoogleMapAdmin.php:1051
 #: includes/Helpers/CBXGooglemapMetaHelper.php:186
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:299
 msgid "Map Icon"
@@ -623,7 +629,7 @@ msgstr ""
 msgid "Map marker custom icon"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:383
+#: includes/CBXGoogleMapAdmin.php:377
 msgid "Map Parameters"
 msgstr ""
 
@@ -631,21 +637,21 @@ msgstr ""
 msgid "Map Settings"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:138
+#: includes/CBXGoogleMapAdmin.php:133
 msgid "Map Source"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:820
+#: includes/CBXGoogleMapAdmin.php:808
 msgid "Map Title Here"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:157
+#: includes/CBXGoogleMapAdmin.php:152
 #: includes/Helpers/CBXGooglemapMetaHelper.php:66
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:161
 msgid "Map Type"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1046
+#: includes/CBXGoogleMapAdmin.php:1038
 msgid "Map Type(Google Map Only)"
 msgstr ""
 
@@ -659,20 +665,20 @@ msgid ""
 "used."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:942
+#: includes/CBXGoogleMapAdmin.php:933
 msgid "Map:"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:944
+#: includes/CBXGoogleMapAdmin.php:935
 msgid "Map: Category"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:943
+#: includes/CBXGoogleMapAdmin.php:934
 msgid "Map: Tags"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:96
-#: includes/Helpers/CBXGooglemapHelper.php:108
+#: includes/Helpers/CBXGooglemapHelper.php:94
+#: includes/Helpers/CBXGooglemapHelper.php:106
 msgid "Maps"
 msgstr ""
 
@@ -680,86 +686,90 @@ msgstr ""
 msgid "Marker Heading"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:197 includes/CBXGoogleMapAdmin.php:1053
+#: includes/CBXGoogleMapAdmin.php:193 includes/CBXGoogleMapAdmin.php:1045
 #: includes/Helpers/CBXGooglemapMetaHelper.php:100
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:227
 #: includes/Widgets/Classic/views/admin.php:109
 msgid "Mouse Scroll Wheel"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:935
+#: includes/CBXGoogleMapAdmin.php:925
 msgid "New Map"
 msgstr ""
 
-#: templates/admin/support.php:229
+#: templates/admin/support.php:234
 msgid "New Plugins: HRM & ERP "
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:284
+#: includes/CBXGoogleMapAdmin.php:281
 msgid "No"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:821
+#: includes/CBXGoogleMapAdmin.php:809
 msgid "No details available for current input"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:103
+#: includes/CBXGoogleMapAdmin.php:806
+msgid "No google map api key found, please check CBX Map plugin setting."
+msgstr ""
+
+#: includes/Helpers/CBXGooglemapHelper.php:101
 msgid "Not found"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:104
+#: includes/Helpers/CBXGooglemapHelper.php:102
 msgid "Not found in Trash"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:414
+#: includes/Helpers/CBXGooglemapHelper.php:412
 msgid "OK"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:227
+#: includes/CBXGoogleMapAdmin.php:223
 #: includes/Helpers/CBXGooglemapMetaHelper.php:132
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:257
 #: includes/Widgets/Classic/views/admin.php:129
 msgid "On Click"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:279
+#: includes/CBXGoogleMapAdmin.php:275
 msgid "On Uninstall delete plugin data"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:385
+#: includes/Helpers/CBXGooglemapHelper.php:383
 msgid "Once you delete, it's gone forever. You can not revert it back."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:228
+#: includes/CBXGoogleMapAdmin.php:224
 #: includes/Helpers/CBXGooglemapMetaHelper.php:131
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:256
 #: includes/Widgets/Classic/views/admin.php:128
 msgid "Open(Default)"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:142
+#: includes/CBXGoogleMapAdmin.php:137
 msgid "Openstreet Map(leafletjs)"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:543
-#: includes/Helpers/CBXGooglemapHelper.php:564
+#: includes/Helpers/CBXGooglemapHelper.php:541
+#: includes/Helpers/CBXGooglemapHelper.php:562
 msgid "Option ID"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:542
-#: includes/Helpers/CBXGooglemapHelper.php:563
+#: includes/Helpers/CBXGooglemapHelper.php:540
+#: includes/Helpers/CBXGooglemapHelper.php:561
 msgid "Option Name"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1475
+#: includes/CBXGoogleMapAdmin.php:1459
 msgid "Option section setting failed, as no section id is empty"
 msgstr ""
 
-#: templates/admin/support.php:255
+#: templates/admin/support.php:260
 msgid "Other WordPress Plugins"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:95
+#: includes/Helpers/CBXGooglemapHelper.php:93
 msgid "Parent Item:"
 msgstr ""
 
@@ -768,100 +778,100 @@ msgstr ""
 msgid "Plain address with road no etc"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:433
+#: includes/Helpers/CBXGooglemapHelper.php:431
 msgid "Please check the captcha."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:423
+#: includes/Helpers/CBXGooglemapHelper.php:421
 msgid "Please enter a valid date ( ISO )."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:422
+#: includes/Helpers/CBXGooglemapHelper.php:420
 msgid "Please enter a valid date."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:420
+#: includes/Helpers/CBXGooglemapHelper.php:418
 msgid "Please enter a valid email address."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:424
+#: includes/Helpers/CBXGooglemapHelper.php:422
 msgid "Please enter a valid number."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:421
+#: includes/Helpers/CBXGooglemapHelper.php:419
 msgid "Please enter a valid URL."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:429
+#: includes/Helpers/CBXGooglemapHelper.php:427
 msgid "Please enter a value between {0} and {1} characters long."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:430
+#: includes/Helpers/CBXGooglemapHelper.php:428
 msgid "Please enter a value between {0} and {1}."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:432
+#: includes/Helpers/CBXGooglemapHelper.php:430
 msgid "Please enter a value greater than or equal to {0}."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:431
+#: includes/Helpers/CBXGooglemapHelper.php:429
 msgid "Please enter a value less than or equal to {0}."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:428
+#: includes/Helpers/CBXGooglemapHelper.php:426
 msgid "Please enter at least {0} characters."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:427
+#: includes/Helpers/CBXGooglemapHelper.php:425
 msgid "Please enter no more than {0} characters."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:425
+#: includes/Helpers/CBXGooglemapHelper.php:423
 msgid "Please enter only digits."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:426
+#: includes/Helpers/CBXGooglemapHelper.php:424
 msgid "Please enter the same value again."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:419
+#: includes/Helpers/CBXGooglemapHelper.php:417
 msgid "Please fix this field."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapMetaHelper.php:561
+#: includes/Helpers/CBXGooglemapMetaHelper.php:574
 msgid "Please save first to add extra information."
 msgstr ""
 
 #: includes/CBXGooglemapSettings.php:528 includes/CBXGooglemapSettings.php:621
-#: includes/Helpers/CBXGooglemapHelper.php:436
+#: includes/Helpers/CBXGooglemapHelper.php:434
 msgid "Please Select"
 msgstr ""
 
-#: includes/CBXGoogleMapPublic.php:275 includes/CBXGoogleMapPublic.php:310
+#: includes/CBXGoogleMapPublic.php:285 includes/CBXGoogleMapPublic.php:320
 msgid "Please set Latitude and Longitude both to display a map."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:870
+#: includes/CBXGoogleMapAdmin.php:859
 msgid "Please wait, Importing..."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1055
+#: includes/CBXGoogleMapAdmin.php:1047
 msgid "Popup Auto Display "
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1056
+#: includes/CBXGoogleMapAdmin.php:1048
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:266
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:268
 #: includes/Widgets/Classic/views/admin.php:134
 msgid "Popup Heading"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:92
+#: includes/Helpers/CBXGooglemapHelper.php:90
 msgctxt "Post Type General Name"
 msgid "Maps"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:93
+#: includes/Helpers/CBXGooglemapHelper.php:91
 msgctxt "Post Type Singular Name"
 msgid "Map"
 msgstr ""
@@ -875,7 +885,7 @@ msgstr ""
 msgid "Primary Marker"
 msgstr ""
 
-#: templates/admin/support.php:221
+#: templates/admin/support.php:226
 msgid "Pro Addon Support"
 msgstr ""
 
@@ -883,11 +893,11 @@ msgstr ""
 msgid "Pro Support"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:362
+#: includes/Helpers/CBXGooglemapHelper.php:360
 msgid "Request failed, please reload the page."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:290
+#: includes/CBXGoogleMapAdmin.php:287
 msgid "Reset all section"
 msgstr ""
 
@@ -895,7 +905,7 @@ msgstr ""
 msgid "Reset Section"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:292
+#: includes/CBXGoogleMapAdmin.php:289
 msgid "Reset Sections"
 msgstr ""
 
@@ -903,33 +913,33 @@ msgstr ""
 msgid "Reviews"
 msgstr ""
 
-#: templates/admin/support.php:201
+#: templates/admin/support.php:206
 msgid "Reviews & Ratings"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:161
-#: includes/Helpers/CBXGooglemapHelper.php:281
-#: includes/Helpers/CBXGooglemapHelper.php:305
+#: includes/CBXGoogleMapAdmin.php:156
+#: includes/Helpers/CBXGooglemapHelper.php:279
+#: includes/Helpers/CBXGooglemapHelper.php:303
 #: includes/Helpers/CBXGooglemapMetaHelper.php:70
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:164
 #: includes/Widgets/Classic/views/admin.php:67
 msgid "Road Map"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:162
-#: includes/Helpers/CBXGooglemapHelper.php:282
-#: includes/Helpers/CBXGooglemapHelper.php:306
+#: includes/CBXGoogleMapAdmin.php:157
+#: includes/Helpers/CBXGooglemapHelper.php:280
+#: includes/Helpers/CBXGooglemapHelper.php:304
 #: includes/Helpers/CBXGooglemapMetaHelper.php:71
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:165
 #: includes/Widgets/Classic/views/admin.php:68
 msgid "Satellite Map"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:393
+#: includes/Helpers/CBXGooglemapHelper.php:391
 msgid "Save"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:398
+#: includes/Helpers/CBXGooglemapHelper.php:396
 msgid "save and close"
 msgstr ""
 
@@ -937,92 +947,92 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:816
+#: includes/CBXGoogleMapAdmin.php:803
 msgid "Search Address"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:102
+#: includes/Helpers/CBXGooglemapHelper.php:100
 msgid "Search Map"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:437
+#: includes/Helpers/CBXGooglemapHelper.php:435
 msgid "Search..."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1346
+#: includes/CBXGoogleMapAdmin.php:1332
 msgid "Security check failed"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1060
+#: includes/CBXGoogleMapAdmin.php:1052
 msgid "Select image"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1013 includes/CBXGoogleMapAdmin.php:1041
+#: includes/CBXGoogleMapAdmin.php:1004 includes/CBXGoogleMapAdmin.php:1033
 msgid "Select Map"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:441
+#: includes/Helpers/CBXGooglemapHelper.php:439
 msgid "Select Media"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:404
+#: includes/Helpers/CBXGooglemapHelper.php:402
 msgid "selection slider"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:341 includes/CBXGoogleMapMisc.php:162
+#: includes/CBXGoogleMapAdmin.php:336 includes/CBXGoogleMapMisc.php:162
 msgid "Settings"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:389
+#: includes/CBXGoogleMapAdmin.php:383
 msgid "Shortcode"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:262
+#: includes/CBXGoogleMapAdmin.php:258
 msgid "Shortcode & Demo"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:263
+#: includes/CBXGoogleMapAdmin.php:259
 msgid ""
 "Shortcode and demo based on default setting, please save once to check "
 "change."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:210
+#: includes/CBXGoogleMapAdmin.php:206
 #: includes/Helpers/CBXGooglemapMetaHelper.php:113
 msgid "Show Info window"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:211
+#: includes/CBXGoogleMapAdmin.php:207
 #: includes/Helpers/CBXGooglemapMetaHelper.php:114
 msgid "Show information on click of marker"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1054
+#: includes/CBXGoogleMapAdmin.php:1046
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:240
 #: includes/Widgets/Classic/views/admin.php:117
 #: includes/Widgets/Classic/views/admin.php:125
 msgid "Show Popup"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:245
+#: includes/CBXGoogleMapAdmin.php:241
 msgid "Show/Default"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:109
+#: includes/Helpers/CBXGooglemapHelper.php:107
 msgid "Simple map using google map and openstreet map."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1444
+#: includes/CBXGoogleMapAdmin.php:1429
 msgid "Sorry, wrong format data"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1273 includes/CBXGoogleMapAdmin.php:1300
-#: includes/CBXGoogleMapAdmin.php:1351 includes/CBXGoogleMapAdmin.php:1419
-#: includes/CBXGoogleMapAdmin.php:1468
+#: includes/CBXGoogleMapAdmin.php:1261 includes/CBXGoogleMapAdmin.php:1287
+#: includes/CBXGoogleMapAdmin.php:1337 includes/CBXGoogleMapAdmin.php:1404
+#: includes/CBXGoogleMapAdmin.php:1452
 msgid "Sorry, you don't have enough permission"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:409
+#: includes/Helpers/CBXGooglemapHelper.php:407
 msgid "Success"
 msgstr ""
 
@@ -1030,13 +1040,13 @@ msgstr ""
 msgid "Support & Docs"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:446
+#: includes/Helpers/CBXGooglemapHelper.php:444
 msgid "Take your pick..."
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:164
-#: includes/Helpers/CBXGooglemapHelper.php:284
-#: includes/Helpers/CBXGooglemapHelper.php:308
+#: includes/CBXGoogleMapAdmin.php:159
+#: includes/Helpers/CBXGooglemapHelper.php:282
+#: includes/Helpers/CBXGooglemapHelper.php:306
 #: includes/Helpers/CBXGooglemapMetaHelper.php:73
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:167
 #: includes/Widgets/Classic/views/admin.php:70
@@ -1063,7 +1073,7 @@ msgstr ""
 msgid "Third Party plugin Integration"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:418
+#: includes/Helpers/CBXGooglemapHelper.php:416
 msgid "This field is required."
 msgstr ""
 
@@ -1079,11 +1089,11 @@ msgstr ""
 msgid "This page has shortcode %s"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:291
+#: includes/CBXGoogleMapAdmin.php:288
 msgid "This will reset all option/section created by this plugin."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:407
+#: includes/Helpers/CBXGooglemapHelper.php:405
 msgid "Tip"
 msgstr ""
 
@@ -1095,15 +1105,15 @@ msgstr ""
 msgid "Toggle All Sections"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:390
+#: includes/Helpers/CBXGooglemapHelper.php:388
 msgid "toggle color picker dialog"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:111
+#: includes/CBXGoogleMapAdmin.php:107
 msgid "Tools"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:273
+#: includes/CBXGoogleMapAdmin.php:269
 msgid "Tools Settings"
 msgstr ""
 
@@ -1111,7 +1121,7 @@ msgstr ""
 msgid "Try Pro Addon"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapMetaHelper.php:325
+#: includes/Helpers/CBXGooglemapMetaHelper.php:338
 msgid "Type full address and enter to find the lat, lon of the location"
 msgstr ""
 
@@ -1120,7 +1130,7 @@ msgid "Type location and select from google map auto suggest."
 msgstr ""
 
 #: includes/CBXGooglemapSettings.php:469
-#: includes/Helpers/CBXGooglemapHelper.php:537
+#: includes/Helpers/CBXGooglemapHelper.php:535
 msgid "Uncheck All"
 msgstr ""
 
@@ -1128,15 +1138,15 @@ msgstr ""
 msgid "Unserializing instances of this class is forbidden."
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:101
+#: includes/Helpers/CBXGooglemapHelper.php:99
 msgid "Update Map"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:440
+#: includes/Helpers/CBXGooglemapHelper.php:438
 msgid "Upload"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:392
+#: includes/Helpers/CBXGooglemapHelper.php:390
 msgid "use previous color"
 msgstr ""
 
@@ -1144,7 +1154,7 @@ msgstr ""
 msgid "View"
 msgstr ""
 
-#: includes/Helpers/CBXGooglemapHelper.php:97
+#: includes/Helpers/CBXGooglemapHelper.php:95
 msgid "View Map"
 msgstr ""
 
@@ -1156,13 +1166,13 @@ msgstr ""
 msgid "Website Link"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1058
+#: includes/CBXGoogleMapAdmin.php:1050
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:286
 #: includes/Widgets/Classic/views/admin.php:150
 msgid "Website url"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:181
+#: includes/CBXGoogleMapAdmin.php:176
 #: includes/Helpers/CBXGooglemapMetaHelper.php:86
 #: includes/Widgets/Elementor/CBXGooglemapElemWidget.php:199
 msgid "Width"
@@ -1173,11 +1183,11 @@ msgstr ""
 msgid "Width(Numeric or with %)"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1050
+#: includes/CBXGoogleMapAdmin.php:1042
 msgid "Width(Numeric, % allowed)"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:283
+#: includes/CBXGoogleMapAdmin.php:280
 msgid "Yes"
 msgstr ""
 
@@ -1185,11 +1195,11 @@ msgstr ""
 msgid "Zoom"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:1052
+#: includes/CBXGoogleMapAdmin.php:1044
 msgid "zoom"
 msgstr ""
 
-#: includes/CBXGoogleMapAdmin.php:171
+#: includes/CBXGoogleMapAdmin.php:166
 #: includes/Helpers/CBXGooglemapMetaHelper.php:79
 msgid "Zoom Level"
 msgstr ""

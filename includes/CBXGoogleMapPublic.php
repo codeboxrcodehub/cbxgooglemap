@@ -192,16 +192,26 @@ class CBXGoogleMapPublic {
 
 		$general_settings = get_option( 'cbxgooglemap_general', [] );
 
-		$hide_leaflet = intval( $settings->get_field( 'hide_leaflet', 'cbxgooglemap_general', 0 ) );
+		$hide_leaflet = absint( $settings->get_field( 'hide_leaflet', 'cbxgooglemap_general', 0 ) );
 		$api_key      = esc_attr( $settings->get_field( 'apikey', 'cbxgooglemap_general', '' ) );
-		$map_source   = intval( $settings->get_field( 'mapsource', 'cbxgooglemap_general', 1 ) );
+		$map_source   = absint( $settings->get_field( 'mapsource', 'cbxgooglemap_general', 1 ) );
 
 		//if google map and api key is not present
 		if ( $map_source == 1 && $api_key == '' ) {
-			return '<p style="text-align: center;">' . esc_html__( 'Google Map Api Key is invalid or empty. Please set in plugin setting.', 'cbxgooglemap' ) . '</p>';
+			//return '<p style="text-align: center;">' . esc_html__( 'Google Map Api Key is invalid or empty. Please set in plugin setting.', 'cbxgooglemap' ) . '</p>';
+
+			return '<div class="notification notification-warning" style="margin-top: 10px;">
+                                <div class="notification-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#f59e0b" d="M235.07 189.09L147.61 37.22a22.75 22.75 0 0 0-39.22 0L20.93 189.09a21.53 21.53 0 0 0 0 21.72A22.35 22.35 0 0 0 40.55 222h174.9a22.35 22.35 0 0 0 19.6-11.19a21.53 21.53 0 0 0 .02-21.72Zm-10.41 15.71a10.46 10.46 0 0 1-9.21 5.2H40.55a10.46 10.46 0 0 1-9.21-5.2a9.51 9.51 0 0 1 0-9.72l87.45-151.87a10.75 10.75 0 0 1 18.42 0l87.46 151.87a9.51 9.51 0 0 1-.01 9.72ZM122 144v-40a6 6 0 0 1 12 0v40a6 6 0 0 1-12 0Zm16 36a10 10 0 1 1-10-10a10 10 0 0 1 10 10Z"/></svg>
+                                </div>
+                                <div class="notification-content">
+                                    <div class="notification-title">'.esc_html__('Googlemap Api Key Missing', 'cbxgooglemap').'</div>
+                                    <div class="notification-message"><p>' .  esc_html__( 'Google map api key missing, Please choose alternative openstreet map or set google map api key in plugin setting.', 'cbxgooglemap' ) . '</p></div>
+                                </div>
+                            </div>';
 		}
 
-		$zoom_default = intval( $settings->get_field( 'zoom', 'cbxgooglemap_general', '8' ) );
+		$zoom_default = absint( $settings->get_field( 'zoom', 'cbxgooglemap_general', '8' ) );
 		if ( $zoom_default == 0 ) {
 			$zoom_default = 8;
 		}
@@ -212,15 +222,15 @@ class CBXGoogleMapPublic {
 			$width_default = '100%';
 		}
 
-		$height_default = intval( $settings->get_field( 'height', 'cbxgooglemap_general', '300' ) );
+		$height_default = absint( $settings->get_field( 'height', 'cbxgooglemap_general', '300' ) );
 		if ( $height_default == 0 ) {
 			$height_default = 300;
 		}
 
 
-		$scrollwheel_default = intval( $settings->get_field( 'scrollwheel', 'cbxgooglemap_general', 1 ) );
-		$showinfo_default    = intval( $settings->get_field( 'showinfo', 'cbxgooglemap_general', 1 ) );
-		$infow_open_default  = intval( $settings->get_field( 'infow_open', 'cbxgooglemap_general', 1 ) );
+		$scrollwheel_default = absint( $settings->get_field( 'scrollwheel', 'cbxgooglemap_general', 1 ) );
+		$showinfo_default    = absint( $settings->get_field( 'showinfo', 'cbxgooglemap_general', 1 ) );
+		$infow_open_default  = absint( $settings->get_field( 'infow_open', 'cbxgooglemap_general', 1 ) );
 
 		$maptype_default = $settings->get_field( 'maptype', 'cbxgooglemap_general', 'roadmap' );
 		$mapicon_default = $settings->get_field( 'mapicon', 'cbxgooglemap_general', '' );
@@ -282,12 +292,12 @@ class CBXGoogleMapPublic {
 
 			$zoom = ( isset( $meta_combined[ $meta_prefix . 'zoom' ] ) && intval( $meta_combined[ $meta_prefix . 'zoom' ] ) > 0 ) ? intval( $meta_combined[ $meta_prefix . 'zoom' ] ) : $zoom_default;
 
-			$scrollwheel = ( isset( $meta_combined[ $meta_prefix . 'scrollwheel' ] ) ) ? intval( $meta_combined[ $meta_prefix . 'scrollwheel' ] ) : intval( $scrollwheel_default );
-			$showinfo    = ( isset( $meta_combined[ $meta_prefix . 'showinfo' ] ) ) ? intval( $meta_combined[ $meta_prefix . 'showinfo' ] ) : intval( $showinfo_default );
-			$infow_open  = ( isset( $meta_combined[ $meta_prefix . 'infow_open' ] ) ) ? intval( $meta_combined[ $meta_prefix . 'infow_open' ] ) : intval( $infow_open_default );
+			$scrollwheel = ( isset( $meta_combined[ $meta_prefix . 'scrollwheel' ] ) ) ? absint( $meta_combined[ $meta_prefix . 'scrollwheel' ] ) : intval( $scrollwheel_default );
+			$showinfo    = ( isset( $meta_combined[ $meta_prefix . 'showinfo' ] ) ) ? absint( $meta_combined[ $meta_prefix . 'showinfo' ] ) : intval( $showinfo_default );
+			$infow_open  = ( isset( $meta_combined[ $meta_prefix . 'infow_open' ] ) ) ? absint( $meta_combined[ $meta_prefix . 'infow_open' ] ) : intval( $infow_open_default );
 
 			$width  = ( isset( $meta_combined[ $meta_prefix . 'width' ] ) && $meta_combined[ $meta_prefix . 'width' ] != '' ) ? $meta_combined[ $meta_prefix . 'width' ] : $width_default;
-			$height = ( isset( $meta_combined[ $meta_prefix . 'height' ] ) && intval( $meta_combined[ $meta_prefix . 'height' ] ) > 0 ) ? intval( $meta_combined[ $meta_prefix . 'height' ] ) : $height_default;
+			$height = ( isset( $meta_combined[ $meta_prefix . 'height' ] ) && absint( $meta_combined[ $meta_prefix . 'height' ] ) > 0 ) ? absint( $meta_combined[ $meta_prefix . 'height' ] ) : $height_default;
 
 			$address = ( isset( $meta_combined[ $meta_prefix . 'address' ] ) && esc_attr( $meta_combined[ $meta_prefix . 'address' ] ) != '' ) ? esc_attr( $meta_combined[ $meta_prefix . 'address' ] ) : '';
 			$website = ( isset( $meta_combined[ $meta_prefix . 'website' ] ) && esc_url( $meta_combined[ $meta_prefix . 'website' ] ) != '' ) ? esc_url( $meta_combined[ $meta_prefix . 'website' ] ) : '';
@@ -300,8 +310,8 @@ class CBXGoogleMapPublic {
 			$atts = cbxgooglemap_decode_entities_array($atts);
 
 			//show map from shortcode params only
-			$lat = isset( $atts['lat'] ) ? floatval( $atts['lat'] ) : '';
-			$lng = isset( $atts['lat'] ) ? floatval( $atts['lng'] ) : '';
+			$lat = isset( $atts['lat'] ) ? (float) $atts['lat'] : '';
+			$lng = isset( $atts['lat'] ) ? (float) $atts['lng'] : '';
 
             if($lat === 0) $lat = '';
             if($lng === 0) $lng = '';
@@ -312,7 +322,7 @@ class CBXGoogleMapPublic {
 
 
 			$width  = isset( $atts['width'] ) ? $atts['width'] : '';
-			$height = isset( $atts['height'] ) ? intval( $atts['height'] ) : '';
+			$height = isset( $atts['height'] ) ? (int) $atts['height'] : '';
 
 			$zoom    = isset( $atts['zoom'] ) ? $atts['zoom'] : $zoom_default;
 			$heading = isset( $atts['heading'] ) ? sanitize_text_field( wp_unslash( $atts['heading'] ) ) : '';

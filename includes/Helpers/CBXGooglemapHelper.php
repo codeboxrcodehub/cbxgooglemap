@@ -18,9 +18,7 @@ class CBXGooglemapHelper {
 	 */
 	public static function is_gutenberg_page() {
 		//if(!is_admin()) return false;
-		if ( function_exists( 'is_gutenberg_page' ) &&
-		     is_gutenberg_page()
-		) {
+		if ( function_exists( 'is_gutenberg_page' ) && is_gutenberg_page()) {
 			// The Gutenberg plugin is on.
 			return true;
 		}

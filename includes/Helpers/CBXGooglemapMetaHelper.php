@@ -294,10 +294,20 @@ class CBXGooglemapMetaHelper {
 						case 'location':
 
 							if ( $map_source == 1 && $api_key == '' ) {
-
 								echo '<input type="text" class="cbxeventzmeta_input cbxeventzmeta_input_location" name="' . esc_attr( $meta_prefix ) . esc_attr( $id ) . '" id="' . esc_attr( $meta_prefix ) . esc_attr( $id ) . '-location-' . intval( $post_id ) . '" value="' . esc_attr( $meta ) . '" size="30" />';
+
+								echo '<div class="notification notification-warning" style="margin-top: 10px;">
+		                                 <div class="notification-icon">
+		                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="#f59e0b" d="M235.07 189.09L147.61 37.22a22.75 22.75 0 0 0-39.22 0L20.93 189.09a21.53 21.53 0 0 0 0 21.72A22.35 22.35 0 0 0 40.55 222h174.9a22.35 22.35 0 0 0 19.6-11.19a21.53 21.53 0 0 0 .02-21.72Zm-10.41 15.71a10.46 10.46 0 0 1-9.21 5.2H40.55a10.46 10.46 0 0 1-9.21-5.2a9.51 9.51 0 0 1 0-9.72l87.45-151.87a10.75 10.75 0 0 1 18.42 0l87.46 151.87a9.51 9.51 0 0 1-.01 9.72ZM122 144v-40a6 6 0 0 1 12 0v40a6 6 0 0 1-12 0Zm16 36a10 10 0 1 1-10-10a10 10 0 0 1 10 10Z"/></svg>
+		                                </div>
+		                                <div class="notification-content">';
+                                    echo '<div class="notification-title">'.esc_html__('Googlemap Api Key Missing', 'cbxgooglemap').'</div>';
 								/* translators: %s: Admin URL */
-								echo '<p>' . sprintf( esc_html__( 'Google map api key missing, alternative openstreet map can be enabled from <a href="%s" target="_blank">global setting</a>', 'cbxgooglemap' ), esc_url( admin_url( 'edit.php?post_type=cbxgooglemap&page=cbxgooglemap_settings' ) ) ) . '</p>';
+                                    echo '<div class="notification-message"><p>' . wp_kses(sprintf( __( 'Google map api key missing, alternative openstreet map can be enabled from <a href="%s" target="_blank">global setting</a>', 'cbxgooglemap' ), esc_url( admin_url( 'edit.php?post_type=cbxgooglemap&page=cbxgooglemap_settings' ) ) ), ['a' => ['href' => [], 'target' => []]]) . '</p></div>';
+                                echo '</div></div>';
+
+								//echo $map_api_key_missing;//phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
 							} elseif (
 								$map_source == 1 ) {
 								$data_custom_attrs = [];

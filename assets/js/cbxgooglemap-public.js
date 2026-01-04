@@ -30,7 +30,7 @@
 
 
         if ($map_source) {
-            if($lat > 0 && $lng > 0){
+            //if($lat > 0 && $lng > 0){
                 // if ($apikey !== '') {
                 // The location of Primary marker
                 var $latlng = {lat: $lat, lng: $lng};
@@ -110,10 +110,10 @@
                         });
                     }
                 }
-            }
+            //}
         }
         else {
-            if($lat > 0 && $lng > 0){
+            //if($lat > 0 && $lng > 0){
                 //open street map
                 $map = L.map($element.get(0)).setView([$lat, $lng], $zoom);
                 //$map.invalidateSize();
@@ -182,7 +182,7 @@
                 // if ( typeof extraMarkers == 'function' ) {
                 // 	extraMarkers(markers, $map);
                 // }
-            }
+            //}
         }
 
         CBXGOOGLEMAPEvents_do_action('cbxgooglemap_render_public', $element, $map, $map_source);
